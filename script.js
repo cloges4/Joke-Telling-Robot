@@ -1,6 +1,3 @@
-import VOICE_API_KEY from './apikey.js';
-
-// Custom Scripts
 
 const button = document.getElementById('button');
 const audioElement = document.getElementById('audio');
