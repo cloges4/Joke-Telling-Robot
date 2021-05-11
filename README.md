@@ -22,6 +22,7 @@ None
 - CSS
 - JavaScript
 - [Voice RSS API](http://www.voicerss.org/)
+- [Joke API](https://sv443.net/jokeapi/v2/)
 
 ## Contributing
 
