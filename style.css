@@ -1,9 +1,18 @@
+/* variables */
+:root {
+  --button-color: #f2a918;
+  --bg-color: white;
+  --shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+  --robot: url("./yellow-robot.gif");
+}
+
 html {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  background-color: var(--bg-color);
 }
 
 .container {
@@ -11,9 +20,9 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  background: url("./yellow-robot.gif");
+  background: var(--robot);
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
@@ -26,12 +35,11 @@ button {
   height: 50px;
   font-family: "Courier New", Courier, monospace;
   font-size: 20px;
-  color: white;
-  background-color: #f2a918;
+  color: var(--bg-color);
+  background-color: var(--button-color);
   border: none;
   border-radius: 5px;
-  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
-  margin-top: 25px;
+  box-shadow: var(--shadow);
 }
 
 button:hover {
@@ -53,5 +61,10 @@ button:disabled {
   .container {
     background-position: center center;
     background-size: cover;
+    justify-content: flex-start;
+  }
+
+  button {
+    margin-top: 25px;
   }
 }
